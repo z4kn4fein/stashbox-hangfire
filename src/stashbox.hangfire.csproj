@@ -10,7 +10,6 @@
     <RootNamespace>Stashbox.Hangfire</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Product>Stashbox.Hangfire</Product>
-    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
     <PackageId>Stashbox.Hangfire</PackageId>
     <PackageTags>Stashbox;Stashbox Hangfire;stashbox-hangfire;Dependency Injection;DI</PackageTags>
     <PackageIconUrl>https://goo.gl/I3hRfL</PackageIconUrl>
