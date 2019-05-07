@@ -10,9 +10,6 @@ configuration: Release
 
 image: Visual Studio 2017
 
-install:
-- ps: dotnet tool install -g InheritDocTool
-
 before_build:
 - ps: . .\patch-version.ps1 src\stashbox.hangfire.csproj $($env:build_version)
 
@@ -21,7 +18,6 @@ build_script:
 - msbuild /t:Build /p:Configuration=%CONFIGURATION% stashbox.hangfire.sln
   
 after_build:
-- inheritdoc -o
 - msbuild /t:Pack /p:IncludeSymbols=true /p:Configuration=%CONFIGURATION% /p:PackageOutputPath=..\artifacts src\stashbox.hangfire.csproj
 
 test_script:
