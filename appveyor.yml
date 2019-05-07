@@ -14,7 +14,7 @@ install:
 - ps: dotnet tool install -g InheritDocTool
 
 before_build:
-- ps: . .\patch-version.ps1 src\stashbox.hangfire\stashbox.hangfire.csproj $($env:build_version)
+- ps: . .\patch-version.ps1 src\stashbox.hangfire.csproj $($env:build_version)
 
 build_script:
 - msbuild /t:Restore /p:Configuration=%CONFIGURATION% stashbox.hangfire.sln
@@ -22,10 +22,10 @@ build_script:
   
 after_build:
 - inheritdoc -o
-- msbuild /t:Pack /p:IncludeSymbols=true /p:Configuration=%CONFIGURATION% /p:PackageOutputPath=..\..\artifacts src\stashbox.hangfire\stashbox.hangfire.csproj
+- msbuild /t:Pack /p:IncludeSymbols=true /p:Configuration=%CONFIGURATION% /p:PackageOutputPath=..\..\artifacts src\stashbox.hangfire.csproj
 
 test_script:
-- dotnet test test\stashbox.hangfire.tests\stashbox.hangfire.tests.csproj -c %CONFIGURATION% --no-build
+- dotnet test test\stashbox.hangfire.tests.csproj -c %CONFIGURATION% --no-build
   
 artifacts:
 - path: artifacts\Stashbox.*.nupkg

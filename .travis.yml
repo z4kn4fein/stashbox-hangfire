@@ -19,4 +19,4 @@ before_script:
   - dotnet restore
 
 script:
-  - dotnet test test/stashbox.hangfire.tests/stashbox.hangfire.tests.csproj -c Release
+  - dotnet test test/stashbox.hangfire.tests.csproj -c Release
