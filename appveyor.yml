@@ -18,6 +18,7 @@ before_build:
 
 build_script:
 - msbuild /t:Restore /p:Configuration=%CONFIGURATION% stashbox.hangfire.sln
+- msbuild /t:Build /p:Configuration=%CONFIGURATION% stashbox.hangfire.sln
   
 after_build:
 - inheritdoc -o
