@@ -24,7 +24,7 @@ test_script:
 - dotnet test test\stashbox.hangfire.tests.csproj -c %CONFIGURATION% --no-build
   
 artifacts:
-- path: artifacts\Stashbox.*.nupkg
+- path: artifacts\Hangfire.*.nupkg
   name: NuGet
 
 notifications:
