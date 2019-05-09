@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Hangfire.Stashbox;
 using Stashbox;
-using Stashbox.Hangfire;
 using Stashbox.Utils;
+using System;
 
 namespace Hangfire
 {

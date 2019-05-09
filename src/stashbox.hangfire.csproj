@@ -6,11 +6,11 @@
     <Authors>Peter Csajtai</Authors>
     <Company>Peter Csajtai</Company>
     <TargetFrameworks>net45;netstandard1.3;netstandard2.0</TargetFrameworks>
-    <AssemblyName>Stashbox.Hangfire</AssemblyName>
-    <RootNamespace>Stashbox.Hangfire</RootNamespace>
+    <AssemblyName>Hangfire.Stashbox</AssemblyName>
+    <RootNamespace>Hangfire.Stashbox</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <Product>Stashbox.Hangfire</Product>
-    <PackageId>Stashbox.Hangfire</PackageId>
+    <Product>Hangfire.Stashbox</Product>
+    <PackageId>Hangfire.Stashbox</PackageId>
     <PackageTags>Stashbox;Stashbox Hangfire;stashbox-hangfire;Dependency Injection;DI</PackageTags>
     <PackageIconUrl>https://goo.gl/I3hRfL</PackageIconUrl>
     <PackageProjectUrl>https://github.com/z4kn4fein/stashbox-hangfire</PackageProjectUrl>

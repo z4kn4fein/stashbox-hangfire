@@ -1,9 +1,9 @@
-using System;
-using Hangfire;
 using Shouldly;
+using Stashbox;
+using System;
 using Xunit;
 
-namespace Stashbox.Hangfire.Tests
+namespace Hangfire.Stashbox.Tests
 {
     public class StashboxActivatorTests
     {

@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.1</TargetFrameworks>
     <IsPackable>false</IsPackable>
-    <AssemblyName>Stashbox.Hangfire.Tests</AssemblyName>
-    <RootNamespace>Stashbox.Hangfire.Tests</RootNamespace>
+    <AssemblyName>Hangfire.Stashbox.Tests</AssemblyName>
+    <RootNamespace>Hangfire.Stashbox.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
