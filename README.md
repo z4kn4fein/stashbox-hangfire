@@ -12,7 +12,7 @@ GlobalConfiguration.Configuration.UseStashboxActivator(container);
 ```
 
 ## ASP.NET Core
-As the ASP.NET Core extension of Hangfire uses the configured `IServiceProvider` to resolve jobs through an `AspNetCoreJobActivator`, so for using Stashbox as the default job activator you can simply just use the [ASP.NET Core integration of Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection) which will replace the default `IServiceProvider` with a Stashbox container. 
+The ASP.NET Core extension of Hangfire uses the built-in `IServiceProvider` to resolve jobs through an `AspNetCoreJobActivator`, so for using Stashbox as the default job activator you can simply just use the [ASP.NET Core integration of Stashbox](https://github.com/z4kn4fein/stashbox-extensions-dependencyinjection) which replaces the default `IServiceProvider` with a Stashbox container. 
 
 However you also have the option to tell Hangfire that it should use the `StashboxJobActivator` directly.
 ```c#
