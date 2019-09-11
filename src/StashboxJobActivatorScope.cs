@@ -1,7 +1,7 @@
-﻿using System;
-using Hangfire;
+﻿using Stashbox;
+using System;
 
-namespace Stashbox.Hangfire
+namespace Hangfire.Stashbox
 {
     internal class StashboxJobActivatorScope : JobActivatorScope
     {

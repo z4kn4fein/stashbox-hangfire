@@ -1,8 +1,8 @@
-﻿using System;
-using Hangfire;
-using Hangfire.Server;
+﻿using Hangfire.Server;
+using Stashbox;
+using System;
 
-namespace Stashbox.Hangfire
+namespace Hangfire.Stashbox
 {
     /// <summary>
     /// Used to resolve job dependencies with Stashbox.
