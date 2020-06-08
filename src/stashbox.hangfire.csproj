@@ -11,6 +11,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Product>Hangfire.Stashbox</Product>
     <PackageId>Hangfire.Stashbox</PackageId>
+    <Description>Hangfire integration for Stashbox.</Description>
     <PackageTags>Stashbox;Stashbox Hangfire;stashbox-hangfire;Dependency Injection;DI</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/z4kn4fein/stashbox-hangfire</PackageProjectUrl>
