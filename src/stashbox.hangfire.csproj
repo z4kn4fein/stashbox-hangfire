@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <Copyright>Copyright © Peter Csajtai 2017</Copyright>
+    <Copyright>Copyright © Peter Csajtai 2020</Copyright>
     <AssemblyTitle>Stashbox Hangfire Extension</AssemblyTitle>
     <Authors>Peter Csajtai</Authors>
     <Company>Peter Csajtai</Company>
