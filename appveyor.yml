@@ -1,5 +1,5 @@
 environment:
-  build_version: 1.2.1
+  build_version: 1.2.2
 
 version: $(build_version)-{build}
 
@@ -8,7 +8,7 @@ pull_requests:
   
 configuration: Release
 
-image: Visual Studio 2017
+image: Visual Studio 2019
 
 before_build:
 - ps: . .\patch-version.ps1 src\stashbox.hangfire.csproj $($env:build_version)
