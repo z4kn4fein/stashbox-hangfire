@@ -1,5 +1,5 @@
 environment:
-  build_version: 1.1.0
+  build_version: 1.2.0
 
 version: $(build_version)-{build}
 
@@ -26,6 +26,8 @@ test_script:
 artifacts:
 - path: artifacts\Hangfire.*.nupkg
   name: NuGet
+- path: artifacts\Hangfire.*.snupkg
+  name: NuGet Symbol Packages
 
 notifications:
 - provider: Email
