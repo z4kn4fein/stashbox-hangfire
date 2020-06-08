@@ -18,7 +18,7 @@ build_script:
 - msbuild /t:Build /p:Configuration=%CONFIGURATION% stashbox.hangfire.sln
   
 after_build:
-- msbuild /t:Pack /p:IncludeSymbols=true /p:Configuration=%CONFIGURATION% /p:PackageOutputPath=..\artifacts src\stashbox.hangfire.csproj
+- msbuild /t:Pack /p:IncludeSymbols=true /p:SymbolPackageFormat=snupkg /p:Configuration=%CONFIGURATION% /p:PackageOutputPath=..\artifacts src\stashbox.hangfire.csproj
 
 test_script:
 - dotnet test test\stashbox.hangfire.tests.csproj -c %CONFIGURATION% --no-build
